@@ -680,7 +680,7 @@ MonoBehaviour:
     FieldOfView: 60
     OrthographicSize: 5
     NearClipPlane: 0.3
-    FarClipPlane: 1000
+    FarClipPlane: 100
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
@@ -1078,7 +1078,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -1735,6 +1735,18 @@ Transform:
   m_Father: {fileID: 1641918006}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1377793725 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4398018786889923898, guid: ce8220ffd026e0640bc7ab42fcc562d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 3944733182539813947}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031bf93f7fc0ba040ac5a44c04161aaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1383485523 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3075082188145964673, guid: ad728e28c27598340bbcd23dfa95ad73,
@@ -5845,6 +5857,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: JohnLemon
+      objectReference: {fileID: 0}
+    - target: {fileID: 732345425345245541, guid: ce8220ffd026e0640bc7ab42fcc562d3,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 963194228}
+    - target: {fileID: 2836518831659315773, guid: ce8220ffd026e0640bc7ab42fcc562d3,
+        type: 3}
+      propertyPath: sprintBarController
+      value: 
+      objectReference: {fileID: 1377793725}
+    - target: {fileID: 4862422986818160137, guid: ce8220ffd026e0640bc7ab42fcc562d3,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4862422986818160137, guid: ce8220ffd026e0640bc7ab42fcc562d3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce8220ffd026e0640bc7ab42fcc562d3, type: 3}

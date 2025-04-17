@@ -12,6 +12,7 @@ public class playerMovement : MonoBehaviour
     Quaternion m_Rotation = Quaternion.identity;
     public bool isWalking;
     public float turnSpeed = 20f;
+    public float playerSpeed = 1f;
     AudioSource m_AudioSource;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +31,7 @@ public class playerMovement : MonoBehaviour
         //Movement
         m_Movement.Set(horizontalInput, 0f, verticalInput);
         m_Movement.Normalize();
+        m_Movement = m_Movement * playerSpeed;
         if(Mathf.Abs(horizontalInput) > 0.1f || Mathf.Abs(verticalInput) > 0.1f){
             isWalking = true;
         }
